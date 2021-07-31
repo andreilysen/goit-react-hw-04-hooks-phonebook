@@ -3,10 +3,7 @@ import ContactListItem from "./ContactListItem";
 
 import PropTypes from "prop-types";
 
-// import styles from "./Contact.module.css";
-
 const ContactsList = ({ contacts, onRemoveContact }) => {
-  // console.log("list", contacts);
   return (
     contacts.length > 0 && (
       <ul>
@@ -21,15 +18,6 @@ const ContactsList = ({ contacts, onRemoveContact }) => {
       </ul>
     )
   );
-  // contacts.map(({contact}) => {
-  // return (
-  //   <li className={styles.items} key={contact.id}>
-  //     <p className={styles.item}>{contact.name}:</p>
-  //     <p className={styles.item}>{contact.number}</p>
-  //     <button onClick={() => onRemoveContact(contact.id)}>Delete</button>
-  //   </li>
-  // );
-  // });
 };
 
 ContactsList.propTypes = {
